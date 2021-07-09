@@ -1,6 +1,8 @@
-## Automated UI testing project, implemented with Cypress
+## Automated UI testing project, implemented with Cypress (TypeScript + PO)
 Cypress is a next generation front end testing tool built for the modern web. It address the key pain points developers and QA engineers face when testing modern applications.
 For more information visit: https://www.cypress.io/
+
+![image description](demo.gif)
 
 ### Local setup
 macOS:
@@ -22,6 +24,3 @@ macOS:
 - Some tests rely on intectations with the API as well to gather data required by the tests. Which demonstrates one of the greatest features incorporated in Cypress
 - Application under test: https://github.com/antonyfuentes/testing-playground
 - This project also already includes the necessary changes to allow it to run on `Gitlab CI`
-
-### See the tests in action:
-![image description](demo.gif)
