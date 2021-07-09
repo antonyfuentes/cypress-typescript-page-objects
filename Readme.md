@@ -13,8 +13,8 @@ macOS:
 
 ### Running tests locally
 - Before running any tests please make sure that the following two env variables are defined in your system:
-  - CYPRESS_ECOMMERCE_USER
-  - CYPRESS_ECOMMERCE_PASS
+  - `CYPRESS_ECOMMERCE_USER`
+  - `CYPRESS_ECOMMERCE_PASS`
 - To open Cypress' GUI run `npx cypress open`. The you will be able to run the tests from there
 - If you want to run the tests from your terminal, simply run: `npm run test:chrome`
 
