@@ -1,0 +1,28 @@
+{
+  "name": "ui-automation",
+  "version": "1.0.0",
+  "description": "Testing framework for Anto's shopping site",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "./node_modules/cypress/bin/cypress run --browser chrome",
+    "test:edge": "./node_modules/cypress/bin/cypress run --browser edge",
+    "test:firefox": "./node_modules/cypress/bin/cypress run --browser firefox",
+    "test:merge-report": "./node_modules/.bin/mochawesome-merge results/*.json > results/test_results.json && rm -rf results/mochawesome_*",
+    "test:html-report": "npx marge -o results --cdn results/test_results.json",
+    "cy:verify": "./node_modules/cypress/bin/cypress verify",
+    "cy:info": "./node_modules/cypress/bin/cypress info",
+    "cy:version": "./node_modules/cypress/bin/cypress version",
+    "cy:cache:path": "./node_modules/cypress/bin/cypress cache path",
+    "cy:cache:list": "./node_modules/cypress/bin/cypress cache list"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^7.5.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2"
+  }
+}

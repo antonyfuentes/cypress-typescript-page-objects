@@ -1,0 +1,39 @@
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+  CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
+  CYPRESS_ECOMMERCE_USER: "automation"
+  CYPRESS_ECOMMERCE_PASS: "automation"
+
+stages:
+  - build
+  - test
+  - deploy
+
+build-app:
+  image: alpine:latest
+  stage: build
+  script:
+    - echo "Building application..."
+    - echo "Done!"
+
+cypress:
+  image: cypress/browsers:node14.16.0-chrome90-ff88
+  stage: test
+  script:
+    - npm ci
+    - npm run test:chrome
+  after_script:
+    - npm run test:merge-report
+    - npm run test:html-report
+  artifacts:
+    when: always
+    paths:
+      - results/
+    expire_in: 1 week
+
+prod-apply:
+  image: alpine:latest
+  stage: deploy
+  script:
+    - echo "Deploying application..."
+    - echo "Done!"

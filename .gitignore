@@ -1,0 +1,8 @@
+antony-fuentes.pem
+node_modules/
+.vscode/
+.env
+results/
+.DS_Store
+.idea/
+cypress.env.json

@@ -1,0 +1,23 @@
+{
+  "integrationFolder": "cypress/tests",
+  "video": true,
+  "reporter": "node_modules/mochawesome",
+  "reporterOptions": {
+    "reportDir": "results",
+    "overwrite": false,
+    "html": true,
+    "timestamp": "mmddyyyy_HHMMss",
+    "showSkipped": true,
+    "charts": true
+  },
+  "screenshotsFolder": "results/assets/screenshots",
+  "videosFolder": "results/assets/videos",
+  "requestBaseUrl": "http://13.58.102.146:8000/",
+  "baseUrl": "http://13.58.102.146:8000/",
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "requestTimeout": 10000,
+  "responseTimeout": 10000,
+  "defaultCommandTimeout": 10000,
+  "retries": 1
+}
