@@ -10,12 +10,18 @@ macOS:
 - For more info, [check the official install guide](https://docs.cypress.io/guides/getting-started/installing-cypress)
 
 ### Running tests locally
+- Before running any tests please make sure that the following two env variables are defined in your system:
+  - CYPRESS_ECOMMERCE_USER
+  - CYPRESS_ECOMMERCE_PASS
 - To open Cypress' GUI run `npx cypress open`. The you will be able to run the tests from there
 - If you want to run the tests from your terminal, simply run: `npm run test:chrome`
 
 ### Tests implemented:
-- Nine tests in total were implemented as part of this framework
+- Nine tests in total were implemented as part of this framework using TypeScript as the backbone programming language
 - The page object pattern and page factory approach were used
 - Some tests rely on intectations with the API as well to gather data required by the tests. Which demonstrates one of the greatest features incorporated in Cypress
 - Application under test: https://github.com/antonyfuentes/testing-playground
 - This project also already includes the necessary changes to allow it to run on `Gitlab CI`
+
+### See the tests in action:
+![image description](demo.gif)

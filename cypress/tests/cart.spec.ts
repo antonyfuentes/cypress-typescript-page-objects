@@ -28,7 +28,7 @@ describe('Cart page tests', () => {
     CartPage.elements.getProductName().should('contain.text', 'Hoodie with Pocket');
     CartPage.elements.getCartSubtotal().should('contain.text', '$35.00');
     cy.url().should('include', CartPage.url);
-    Common.actions.getTitle().should('include', CartPage.title);
+    cy.title().should('include', CartPage.title);
   });
 
   it('should be able to remove products from the cart', ()=>{
