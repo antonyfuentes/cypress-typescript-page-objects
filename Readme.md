@@ -2,7 +2,7 @@
 Cypress is a next generation front end testing tool built for the modern web. It address the key pain points developers and QA engineers face when testing modern applications.
 For more information visit: https://www.cypress.io/
 
-<img src="https://raw.githubusercontent.com/antonyfuentes/cypress-typrescript-page-objects/main/demo.gif" width="80%"/>
+<img src="https://raw.githubusercontent.com/antonyfuentes/cypress-typescript-page-objects/main/demo.gif" width="80%"/>
 
 ### Local setup
 macOS:
